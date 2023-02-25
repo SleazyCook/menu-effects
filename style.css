@@ -285,3 +285,119 @@ body {
   top: 75%;
   transition-delay: .45s;
 }
+
+/* 04 END */
+/* 05 START */
+
+.container-05 {
+  background-color: white;
+}
+
+.list-05 {
+  padding: 0;
+  display: flex;
+}
+
+.list-item-05 {
+  list-style-type: none;
+  padding: 10px 20px;
+}
+
+.link-05 {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #222;
+  position: relative;
+}
+
+.link-05:before {
+  content: "";
+  width: 0px;
+  height: 5px;
+  background-color: #00bcd4;
+  position: absolute;
+  top: 120%;
+  left: 0;
+  transition: all .5s;
+}
+
+.link-05:after {
+  content: "";
+  width: 0px;
+  height: 5px;
+  background-color: #f0f;
+  position: absolute;
+  top: 120%;
+  right: 0;
+  transition: all .5s;
+}
+
+.link-05:hover:before {
+  width: 50%;
+  transform: translateX(100%);
+}
+
+.link-05:hover:after {
+  width: 50%;
+  transform: translateX(-100%);
+}
+
+/* 05 END */
+/* 076 START */
+
+.container-06 {
+  background-color: #006165;
+}
+
+.list-06 {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.list-item-06 {
+  list-style: none;
+  margin: 0px 20px;
+  transition: .5s;
+}
+
+.link-06 {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  padding: 5px;
+  font-size: 22px;
+  color: white;
+  text-transform: uppercase;
+  transition: all .5s;
+}
+
+.list-06:hover .link-06 {
+  filter: blur(3px);
+  opacity: 0.2;
+}
+
+.list-06 .link-06:hover {
+  transform: scale(1.5);
+  filter: blur(0);
+  opacity: 1;
+}
+
+.link-06:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #EE5A24;
+  z-index: -1;
+  transition: 0.3s;
+  transform: scale(0);
+}
+
+.link-06:hover:before {
+  transform: scale(1);
+}
