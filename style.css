@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+
+footer {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+  padding: 2rem;
+  border-top: 1px solid black;
+}
+
+.author {
+  font-family: 'Berkshire Swash', cursive;
+}
+
+.udemy {
+  font-size: 1rem;
+}
+
+body {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.label {
+  text-align: center;
+  font-size: 32px;
+}
+
+/* MENUS START */
+
+.container {
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.basic-flex {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+/* 01 START */
+
+.container-01 {
+  background-color: #fffa65;
+}
+
+.list-item-01 {
+  list-style: none;
+}
+
+.link-01 {
+  text-decoration: none;
+  color: #3d3d3d;
+  font-size: 22px;
+  display: block;
+  padding: 10px 15px;
+  position: relative;
+}
+
+.link-01:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #3d3d3d;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all .5s;
+}
+
+.link-01:hover:before {
+  transform: scaleX(1);
+}
+
+.link-01:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #3d3d3d;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: all .5s;
+}
+
+.link-01:hover:after {
+  transform: scaleX(1);
+}
+
+/* 01 END */
+/* 02 START */
+
+.container-02 {
+  background-color: #fff;
+}
+
+.link-02 {
+  color: #272727;
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  margin: 0 10px;
+  position: relative;
+  transition: all .5s;
+}
+
+.link-02:hover {
+  background-color: #e91e63;
+  color: white;
+}
+
+.link-02:before {
+  content: "";
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  width: 12px;
+  height: 12px;
+  border: 3px solid #e91e63;
+  border-width: 0 0 3px 3px;
+  opacity: 0;
+  transition: all .3s;
+}
+
+.link-02:hover:before {
+  opacity: 1;
+  bottom: -8px;
+  left: -8px;
+}
+
+.link-02:after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 12px;
+  height: 12px;
+  border: 3px solid #e91e63;
+  border-width: 3px 3px 0 0;
+  opacity: 0;
+  transition: all .3s;
+}
+
+.link-02:hover:after {
+  opacity: 1;
+  top: -8px;
+  right: -8px;
+}
+
+/* 02 END */
+/* 03 START */
+
+.container-03 {
+  background-color: white;
+}
+
+.list-03 {
+  margin: 0; 
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+}
+
+.link-03 {
+  display: block;
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #262626;
+  text-transform: capitalize;
+  text-decoration: none;
+  position: relative;
+  transition: all .5s;
+  z-index: 1;
+}
+
+.link-03:hover {
+  color: white;
+}
+
+.link-03 span {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: #262626;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: all 0.5s;
+}
+
+.link-03:hover span {
+  transform: scaleY(1);
+}
+
+.link-03 span:nth-child(2) {
+  left: 25%;
+  transition-delay: .15s;
+}
+
+.link-03 span:nth-child(3) {
+  left: 50%;
+  transition-delay: .3s;
+}
+
+.link-03 span:nth-child(4) {
+  left: 75%;
+  transition-delay: .45s;
+}
+
+/* 03 END */
+/* 04 START */
+
+.container-04 {
+  background-color: white;
+}
+
+.list-04 {
+  margin: 0; 
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+}
+
+.link-04 {
+  display: block;
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #262626;
+  text-transform: capitalize;
+  text-decoration: none;
+  position: relative;
+  transition: all .5s;
+  z-index: 1;
+}
+
+.link-04:hover {
+  color: white;
+}
+
+.link-04 span {
+  position: absolute;
+  width: 100%;
+  height: 25%;
+  background-color: #262626;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.5s;
+}
+
+.link-04:hover span {
+  transform: scaleX(1);
+}
+
+.link-04 span:nth-child(2) {
+  top: 25%;
+  transition-delay: .15s;
+}
+
+.link-04 span:nth-child(3) {
+  top: 50%;
+  transition-delay: .3s;
+}
+
+.link-04 span:nth-child(4) {
+  top: 75%;
+  transition-delay: .45s;
+}
