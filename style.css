@@ -401,3 +401,80 @@ body {
 .link-06:hover:before {
   transform: scale(1);
 }
+
+/* 06 END */
+/* 07 START */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+.container-07 {
+  background-color: #333333;
+  font-family: 'Raleway', Arial, sans-serif;
+  height: 35vh;
+}
+
+.list-07 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-items-07 {
+  position: relative;
+  list-style: none;
+  margin: 5px;
+}
+
+.link-07 {
+  position: relative;
+  display: block;
+  height: 40px;
+  text-decoration: none;
+  padding: 5px 10px;
+  letter-spacing: 2px;
+  overflow: hidden;
+}
+
+.link-07 span {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .5s;
+  color: white;
+  font-size: 20px;
+  text-transform: capitalize;
+  transition-delay: .5s;
+}
+
+.link-07:hover span:nth-child(1) {
+  transform: translateY(-100%);
+  transition-delay: 0s;
+}
+
+.link-07:hover span:nth-child(2) {
+  transform: translateY(-100%);
+  transition-delay: 0s;
+}
+
+.link-07:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #16a085;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: .5s;
+}
+
+.link-07:hover:before {
+  transform:scaleX(1);
+  transform-origin: right;
+  transition-delay: .5s;
+}
